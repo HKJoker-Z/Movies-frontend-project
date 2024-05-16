@@ -3,8 +3,9 @@ import React from 'react'
 import { FaArrowLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { Player } from 'video-react';
 // import "node_modules/video-react/dist/video-react.css"; // import css
+import VideoPlayer from '../components/VideoPlayer';
+
 
 
 const JobPage = ({ deleteJob }) => {
@@ -57,8 +58,9 @@ const JobPage = ({ deleteJob }) => {
                                 </div>
 
                                 <div className="bg-white p-6 rounded-lg shadow-md mt-6">
+                                    {/* <link rel="stylesheet" href="/css/video-react.css" /> */}
                                     Here is a div that play video
-
+                                    <VideoPlayer />
 
 
                                 </div>
